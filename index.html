@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Поиск по пользователям</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,700,400,100" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet/less" type="text/css" href="./src/components/layout/layout.less">
+  <link rel="stylesheet/less" type="text/css" href="./src/components/filters/filters.less">
+  <link rel="stylesheet/less" type="text/css" href="./src/components/users_list/users_list.less">
+
+  <!-- less compiler -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+
+</head>
+<body>
+
+  <div class="content_wrapper">
+
+    <div class="content_wrapper_inner">
+
+      <div class="route_title">
+
+        <h1>Клиенты</h1>
+
+      </div>
+
+      <!-- Filters section -->
+      <div class="filters_wrapper">
+
+        <div class="filters_list">
+
+          <div class="filters_list_field">
+
+            <input class="query_input" type="text" placeholder="Поиск по имени и фамилии">
+
+          </div>
+
+          <div class="filters_list_field">
+
+            <div class="filters_list_field_label type_date">
+              <span class="form_search_param_label">Дата регистрации</span>
+            </div>
+
+            <label class="filters_list_field_input">
+              <div class="date_picker_wrapper">
+                <input class="input_simple" type="text" value="от 12.08.2013">
+              </div>
+            </label>
+
+            <label class="filters_list_field_input">
+              <div class="date_picker_wrapper">
+                <input class="input_simple" type="text" value="до 01.01.2019">
+              </div>
+            </label>
+
+          </div>
+
+          <div class="filters_list_field">
+
+            <a href="" class="filter_field_expand open" style="">
+              <span class="filter_field_expand_label">Баллы</span>
+            </a>
+
+          </div>
+
+          <div class="filters_list_field no_wrap" style="padding-left: 20px;">
+            <div class="filters_list_field_label">
+              <span class="form_search_param_label">Кол-во заработанных баллов</span>
+            </div>
+            <div class="slider_wrap">
+              <div class="slider_simple ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                <div class="ui-slider-range ui-widget-header ui-corner-all" style="width: 90%; left: 10%;"></div>
+                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 10%;"></span>
+                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+              </div>
+              <div class="slider_inputs_wrap">
+                <div class="slider_inputs_placeholder">
+                  500 — 5000
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="filters_footer">
+
+          <div class="filters_footer_inner clearfix">
+
+            <span class="filters_footer_count">
+              56 клиентов
+            </span>
+
+            <button type="button" class="search_button">Поиск</button>
+
+            <button type="button" class="reset_button">Сбросить</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Users list section -->
+      <div class="users_list_wrapper">
+
+        <table class="users_list">
+
+          <tr>
+
+            <th>
+              <div>Имя и фамилия</div>
+            </th>
+
+            <th>
+              <div>Дата регистрации</div>
+            </th>
+
+            <th>
+              <div>Баллы</div>
+            </th>
+
+          </tr>
+
+          <tr>
+
+            <td>
+
+              Иван филлипенко
+
+            </td>
+
+            <td>
+
+              25.11.2015
+
+            </td>
+
+            <td>
+
+              <i class="user_points_icon"></i> 4567
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+
+              Андрей Иванов
+
+            </td>
+
+            <td>
+
+              14.07.2017
+
+            </td>
+
+            <td>
+
+              <i class="user_points_icon"></i> 457
+
+            </td>
+
+          </tr>
+
+        </table>
+
+        <div class="pagination_wrapper">
+
+          <table class="users_list_pagination">
+
+            <tr>
+
+              <td>
+
+                <span class="users_list_pagination_item selected">1</span>
+
+              </td>
+
+              <td>
+
+                <span class="users_list_pagination_item">2</span>
+
+              </td>
+
+              <td>
+
+                <span class="users_list_pagination_item">3</span>
+
+              </td>
+
+            </tr>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

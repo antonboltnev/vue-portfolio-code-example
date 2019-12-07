@@ -1,0 +1,49 @@
+@import "../../theme/colors";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: @body_background;
+}
+.content_wrapper {
+  text-align: center;
+  font-family: @main_font;
+}
+.content_wrapper_inner {
+  display: inline-block;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 0 100px 0;
+  margin: 0 auto;
+  text-align: left;
+  .route_title {
+    h1 {
+      font-weight: 200;
+      font-size: 42px;
+      line-height: 100%;
+      margin: 30px 0;
+    }
+  }
+}
+.users_list_wrapper {
+  margin-top: 40px;
+}
+.pagination_wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+.list_pagination__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 670px;
+}
+.no_wrap {
+  white-space: nowrap;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -90,7 +90,6 @@ import usersList from '../users_list/users_list'
 import usersTablePagination from '../users_list/users_table_pagination'
 import {mapActions, mapGetters} from 'vuex'
 import MaskedInput from 'vue-masked-input'
-import { resolve } from 'path';
 
 export default {
     name: 'layout',

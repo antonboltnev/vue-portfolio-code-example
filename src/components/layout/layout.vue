@@ -282,8 +282,13 @@ export default {
   }
 
   // filters
+  .filters__wrapper {
+    box-shadow: 0 9px 12px 0 #c1c1c1;
+    border-radius: $padding/2;
+  }
 .filters__list {
   background-color: $lightWhite;
+  border-radius: $padding/2;
   padding: 20px 50px;
   &_field {
     margin: 20px 0 20px 0;
@@ -348,21 +353,17 @@ export default {
     -o-transition: color 0.15s ease;
     transition: color 0.15s ease;
     cursor: default;
-
     &_label {
       cursor: pointer;
     }
-
     &:hover {
       color: #6E9FEE;
     }
-
     &.open:before {
       transform: rotate(-180deg);
       transition: all ease .3s;
     }
     &:before {
-
       content: '';
       position: absolute;
       left: 0;
@@ -378,20 +379,13 @@ export default {
       border-left: 6px solid transparent !important;
       border-right: 6px solid transparent !important;
       border-top: 6px solid #000;
-
     }
 
     .filter_field_expand_label {
-
       font-size: 18px;
-
-
     }
-
   }
-
   .slider_wrap {
-
     display: inline-block;
     width: auto;
     white-space: nowrap;
@@ -399,9 +393,7 @@ export default {
     vertical-align: top;
     margin-top: 5px;
     margin-left: 20px;
-
     .slider_simple {
-
       display: inline-block;
       width: 400px;
       margin-right: 60px;
@@ -411,35 +403,24 @@ export default {
       margin-top: 5px;
       position: relative;
       border-radius: 0 !important;
-
     }
-
     .slider_inputs__wrap {
-
       vertical-align: top;
       display: flex;
       position: relative;
       top: -8px;
-
       .slider_inputs__placeholder {
-
         line-height: 30px;
         font-weight: 300;
         font-size: 16px;
-
       }
-
     }
-
     .ui-slider-range {
-
       height: 4px !important;
       background: #7084b6 !important;
       position: absolute !important;
       border: none !important;
-
     }
-
     .ui-slider-handle {
       position: absolute;
       width: 30px;
@@ -451,28 +432,21 @@ export default {
       margin-left: -16px;
       outline: none;
       border: 1px solid #fff;
-
       &:hover {
-
         border: 1px solid #ddd;
-
       }
     }
-
   }
 
   //datepickers
   .date_picker__wrapper {
-
     display: inline-block;
     margin: 0 4px;
     position: relative;
     min-width: 100px;
     width: auto;
     vertical-align: top;
-
     .input_simple {
-
       line-height: 40px;
       height: 40px;
       width: 100%;
@@ -488,42 +462,27 @@ export default {
       font-family: 'Roboto', Arial, sans-serif;
       outline: none;
       padding: 0 10px;
-
     }
-
   }
-
   .filters__list_field_label.type_date {
     margin-top: 8px;
   }
-
 }
-
 .filters__footer {
-
+  border-radius: $padding/2;
   padding: 0 50px;
   background-color: $lightWhite;
-
   &_inner {
-
     border-top: 2px solid $darkWhite;
     padding: 20px 0;
-
   }
-
   &_count {
-
     float: left;
     margin-top: 10px;
-
   }
-
   button {
-
     float: right;
-
   }
-
   .reset_button {
     min-width: 94px;
     display: inline-block;
@@ -549,13 +508,10 @@ export default {
       background-color: #f0f0f0;
     }
   }
-
   .search_button {
-
     margin-left: 13px;
     min-width: 107px;
     padding: 10px 15px;
-
     display: inline-block;
     font-size: 16px;
     font-weight: 100;
@@ -580,60 +536,49 @@ export default {
   }
 
 }
-
     /* Styles for range slider */
     .range-slider {
       width: 300px;
       margin: auto 16px;
       text-align: center;
       position: relative;
-    }
-    
+    }    
     .range-slider svg,
     .range-slider input[type=range] {
       position: absolute;
       left: 0;
       bottom: 0;
-    }
-    
+    }   
     input[type=number] {
       border: 1px solid #ddd;
       text-align: center;
       font-size: 1.6em;
       -moz-appearance: textfield;
-    }
-    
+    }   
     input[type=number]::-webkit-outer-spin-button,
     input[type=number]::-webkit-inner-spin-button {
       -webkit-appearance: none;
-    }
-    
+    }    
     input[type=number]:invalid,
     input[type=number]:out-of-range {
       border: 2px solid #ff6347;
-    }
-    
+    }    
     input[type=range] {
       -webkit-appearance: none;
       width: 100%;
-    }
-    
+    }    
     input[type=range]:focus {
       outline: none;
-    }
-    
+    }    
     input[type=range]:focus::-webkit-slider-runnable-track {
       background: #7084b6;
-    }
-    
+    }   
     input[type=range]:focus::-ms-fill-lower {
       background: #ffffff;
-    }
-    
+    }   
     input[type=range]:focus::-ms-fill-upper {
       background: #ffffff;
     }
-    
     input[type=range]::-webkit-slider-runnable-track {
       width: 100%;
       height: 4px;
@@ -643,8 +588,7 @@ export default {
       border-radius: 1px;
       box-shadow: none;
       border: 0;
-    }
-    
+    }   
     input[type=range]::-webkit-slider-thumb {
       z-index: 2;
       position: relative;
@@ -660,6 +604,4 @@ export default {
       outline: none;
       margin-top: -7px;
     }
-
-
 </style>

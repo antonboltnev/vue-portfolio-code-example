@@ -59,7 +59,7 @@
         <div class="filters__footer">
           <div class="filters__footer_inner clearfix">
             <span class="filters__footer_count">
-              {{filteredUsers.length}} client(-s)
+              {{filteredUsers.length ? filteredUsers.length : USERS.length}} client(-s)
             </span>
             <button type="button" class="search_button" @click="applyFilters(searchFieldValue)">Search</button>
             <button type="button" class="reset_button" @click="clearFilters">Clear</button>

@@ -3,9 +3,9 @@ import App from './App.vue'
 import store from './vuex/store.js'
 import './assets/scss/styles.scss'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
   store
-}).$mount('#app')
+}).$mount('#app');

@@ -9,7 +9,7 @@
     "dev": "concurrently --kill-others \"npm run serve\" \"json-server --watch db.json\""
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "concurrently": "^5.0.0",
     "core-js": "^3.3.2",
     "node-sass": "^4.13.0",

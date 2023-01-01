@@ -13,18 +13,18 @@
     "concurrently": "^5.0.0",
     "core-js": "^3.3.2",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^13.2.0",
     "vue": "^2.6.10",
     "vue-masked-input": "^0.5.2",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
+    "@vue/cli-plugin-babel": "^4.5.19",
+    "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.0.3",
     "less": "^3.10.3",
-    "less-loader": "^5.0.0",
+    "less-loader": "^11.1.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
